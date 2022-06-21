@@ -1,0 +1,23 @@
+# config
+.DS_Store
+.svn/
+tmp/
+
+# design data.
+*.psd
+*.ai
+
+# node.js
+node_modules/
+package-lock.json
+
+# Development environment.
+.sass-cache
+*.map
+src/_twig/data/html/
+
+_v*/
+_src*/
+_data*/
+
+dist/
