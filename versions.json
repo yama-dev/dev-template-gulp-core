@@ -1,0 +1,10 @@
+[
+  {
+    "version": "1.13.2",
+    "description": "'dev-template' new version (1.13.2)",
+    "name": "@yama-dev/dev-template-gulp-core",
+    "repo": "https://github.com/yama-dev/dev-template-gulp-core",
+    "tag": "v1.13.2",
+    "repo_template": "template"
+  }
+]
