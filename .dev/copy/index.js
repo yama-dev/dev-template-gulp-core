@@ -14,7 +14,7 @@ import changed from 'gulp-changed';
  * Copy Task
  */
 let taskCopy = ()=>{
-  let _target = CONFIG.deployDirectory.slice();
+  let _target = CONFIG.copyDirectory.slice();
 
   if(CONFIG.path.source !== CONFIG.path.sourceBuild){
     _target.push(`!${CONFIG.watchDirectory.jspre}`);

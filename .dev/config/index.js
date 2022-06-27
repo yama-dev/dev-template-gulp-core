@@ -118,6 +118,22 @@ let CONFIG = {
     ]
   },
 
+  copyDirectory: [
+    `${CONFIG_PATH.source}**/*`,
+    `!${CONFIG_PATH.source}_*/**`,
+    `!${CONFIG_PATH.source}__*/**`,
+    `!${CONFIG_PATH.source}___*/**`,
+    `!${CONFIG_PATH.source}vender/**`,
+    `!${CONFIG_PATH.source}vendor/**`,
+    `!${CONFIG_PATH.source}**/*.ejs`,
+    `!${CONFIG_PATH.source}**/*.pug`,
+    `!${CONFIG_PATH.source}**/*.slim`,
+    `!${CONFIG_PATH.source}**/_*.css`,
+    `!${CONFIG_PATH.source}**/*.scss`,
+    `!${CONFIG_PATH.source}**/_*.js`,
+    `!${CONFIG_PATH.source}**/*.es*`,
+  ],
+
   deployDirectory: [
     `${CONFIG_PATH.sourceBuild}**/*`,
     `!${CONFIG_PATH.sourceBuild}_*/**`,
