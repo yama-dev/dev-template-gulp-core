@@ -1,0 +1,12 @@
+{
+  "outputDirectory": "",
+  "host": "",
+  "sourcemaps": true,
+  "ejs": {
+    "site_title": "title...",
+    "site_url": "https://github.com/yama-dev",
+    "site_description": "description...",
+    "site_copy": "@copyright",
+    "pages": []
+  }
+}
