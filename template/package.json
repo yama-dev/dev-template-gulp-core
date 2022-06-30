@@ -98,9 +98,11 @@
     "comments": true
   },
   "browserslist": [
-    "ios >= 10",
-    "android >= 5",
-    "last 2 versions"
+    "last 2 versions",
+    "not dead",
+    "not IE 11",
+    "ios >= 12",
+    "android >= 8"
   ],
   "eslintConfig": {
     "env": {
