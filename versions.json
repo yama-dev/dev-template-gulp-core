@@ -1,5 +1,29 @@
 [
   {
+    "version": "1.13.5",
+    "description": "'dev-template' new version (1.13.5)",
+    "name": "@yama-dev/dev-template-gulp-core",
+    "repo": "https://github.com/yama-dev/dev-template-gulp-core",
+    "tag": "v1.13.5",
+    "repo_template": {
+      "directory": "template",
+      "zip": "master.zip",
+      "files": {
+        "corefile": [
+          "package.json",
+          ".gitignore"
+        ],
+        "basefile": [
+          {
+            "name": "BASIC",
+            "description": "basic use.",
+            "target": "basic"
+          }
+        ]
+      }
+    }
+  },
+  {
     "version": "1.13.4",
     "description": "'dev-template' new version (1.13.4)",
     "name": "@yama-dev/dev-template-gulp-core",
@@ -17,7 +41,7 @@
           {
             "name": "BASIC",
             "description": "basic use.",
-            "target": "basic/*"
+            "target": "basic"
           }
         ]
       }
