@@ -18,6 +18,12 @@ import cssnano        from 'cssnano';
 import cssSorter      from 'css-declaration-sorter';
 import postcssCombineMediaQuery from 'postcss-combine-media-query';
 
+import postcssCustomMedia from 'postcss-custom-media';
+import postcssCustomSelectors from 'postcss-custom-selectors';
+import postcssMediaMinmax from 'postcss-media-minmax';
+import postcssColorHexAlpha from 'postcss-color-hex-alpha';
+
+
 import cache          from 'gulp-cached';
 import plumber        from 'gulp-plumber';
 
@@ -59,7 +65,12 @@ const taskSass = (isRefresh = false) => {
     _config_autoprefixer.cascade = true;
   }
 
-  let _config_postcss = [];
+  let _config_postcss = [
+    postcssCustomMedia,
+    postcssCustomSelectors,
+    postcssMediaMinmax,
+    postcssColorHexAlpha,
+  ];
 
   if(CONFIG.env.cssSortPropaty || CONFIG.user.cssSortPropaty){
     _config_postcss.push( cssSorter({order: 'concentric-css'}) );
