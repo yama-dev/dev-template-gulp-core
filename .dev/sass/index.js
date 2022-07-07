@@ -13,7 +13,6 @@ import dartSass from 'sass';
 const sass = gulpSass(dartSass);
 
 import postcss        from 'gulp-postcss';
-import pixrem         from 'pixrem';
 import autoprefixer   from 'autoprefixer';
 import cssnano        from 'cssnano';
 import cssSorter      from 'css-declaration-sorter';
@@ -73,7 +72,6 @@ const taskSass = (isRefresh = false) => {
   _config_postcss = [
     ..._config_postcss,
     autoprefixer(_config_autoprefixer),
-    pixrem(),
   ];
 
   if(CONFIG.env.cssMin || CONFIG.user.cssMin){
