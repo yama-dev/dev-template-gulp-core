@@ -34,7 +34,7 @@ let CONFIG = {
     sass    : `${CONFIG_PATH.source}**/*.scss`,
     jspre   : `${CONFIG_PATH.source}**/!(vender|vender|libs|lib)/*.js`,
     js      : `${CONFIG_PATH.sourceBuild}**/*.js`,
-    es      : `${CONFIG_PATH.source}**/*.es*`
+    es      : `${CONFIG_PATH.source}**/*.es`
   },
 
   watchIgnoreDirectory: {
@@ -131,7 +131,7 @@ let CONFIG = {
     `!${CONFIG_PATH.source}**/_*.css`,
     `!${CONFIG_PATH.source}**/*.scss`,
     `!${CONFIG_PATH.source}**/_*.js`,
-    `!${CONFIG_PATH.source}**/*.es*`,
+    `!${CONFIG_PATH.source}**/*.es`,
   ],
 
   deployDirectory: [
@@ -147,7 +147,7 @@ let CONFIG = {
     `!${CONFIG_PATH.sourceBuild}**/_*.css`,
     `!${CONFIG_PATH.sourceBuild}**/*.scss`,
     `!${CONFIG_PATH.sourceBuild}**/_*.js`,
-    `!${CONFIG_PATH.sourceBuild}**/*.es*`,
+    `!${CONFIG_PATH.sourceBuild}**/*.es`,
   ],
 
   imageMinDirectory: [

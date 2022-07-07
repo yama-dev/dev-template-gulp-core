@@ -24,22 +24,25 @@ all:
 		echo $$i ; \
 	done
 
-build: clean
+build: clean delds transform zip
+
+zip:
+	$(CD) $(TEMPLATE_FOLDER) && $(ZIP) master.zip -r .
 
 clean:
 	@echo clean
 	$(RM) dist
 
 transform:
-	sed -i "" "s/..\/dist\//.\//g" "$(ZIP_FOLDER)/index.html"
+	sed -i "" "s/--silent\"/--silent --gulpfile node_modules\/@yama-dev\/dev-template-gulp-core\/gulpfile\.esm\.js --cwd \.\/\"/g" "template/package.json"
+	sed -i "" -r "s/version\":[ ]?\"[.0-9]*/version\"\: \"${VERSION}/g" "template/package.json"
+	sed -i "" -r "s/version\":[ ]?\"[.0-9]*/version\"\: \"${VERSION}/g" "package.json"
+	sed -i "" -r "s/yama-dev\/dev-template-gulp-core\.git#v[.0-9]*\"/yama-dev\/dev-template-gulp-core\.git#v${VERSION}\"/g" "template/package.json"
 
 delds:
 	find . -name ".DS_Store" -print -exec rm {} ";"
 
-zip: delds
-	$(CD) $(TEMPLATE_FOLDER) && $(ZIP) master.zip -r .
-
-make:
+backup:
 	# $(RM) $(ZIP_FOLDER)
 	# $(MK) $(ZIP_FOLDER)
 	# $(CP) dist/ $(ZIP_FOLDER)/

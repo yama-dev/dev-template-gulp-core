@@ -1,6 +1,6 @@
 {
   "name": "dev-template-gulp",
-  "version": "1.13.4",
+  "version": "1.13.5",
   "description": "Development environment for web site development",
   "keywords": [
     "web",
@@ -24,7 +24,7 @@
     "imagemin": "gulp imagemin --silent --gulpfile node_modules/@yama-dev/dev-template-gulp-core/gulpfile.esm.js --cwd ./",
     "check": "npm outdated",
     "lint": "eslint gulpfile.js",
-    "test": "npm run lint && gulp release --gulpfile node_modules/@yama-dev/dev-template-gulp-core/gulpfile.esm.js --cwd ./",
+    "test": "npm run lint && gulp release --silent --gulpfile node_modules/@yama-dev/dev-template-gulp-core/gulpfile.esm.js --cwd ./",
     "test:twigmodule": "phpunit ./src/_twig/ModuleTest.php || true",
     "preinstall": "npm config set loglevel silent",
     "postinstall": "npm config delete loglevel"
@@ -46,7 +46,7 @@
     "@babel/register": "^7.14.5",
     "@yama-dev/data-collector": "^0.6.0",
     "@yama-dev/data-template": "^0.6.0",
-    "@yama-dev/dev-template-gulp-core": "yama-dev/dev-template-gulp-core.git#v1.13.4",
+    "@yama-dev/dev-template-gulp-core": "yama-dev/dev-template-gulp-core.git#v1.13.5",
     "@yama-dev/gulp-stream-util": "^0.3.0",
     "autoprefixer": "^10.3.1",
     "babel-loader": "^8.2.2",
