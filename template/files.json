@@ -5,6 +5,11 @@
   ],
   "basefile": [
     {
+      "name": "NONE",
+      "description": "no base file.",
+      "target": ""
+    },
+    {
       "name": "BASIC",
       "description": "basic use.",
       "target": "basic"
