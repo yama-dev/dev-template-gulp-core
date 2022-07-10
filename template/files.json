@@ -1,0 +1,13 @@
+{
+  "corefile": [
+    "package.json",
+    ".gitignore"
+  ],
+  "basefile": [
+    {
+      "name": "BASIC",
+      "description": "basic use.",
+      "target": "basic"
+    }
+  ]
+}
