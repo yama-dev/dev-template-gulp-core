@@ -31,7 +31,7 @@ zip:
 
 clean:
 	@echo clean
-	$(RM) dist
+	$(RM) template/master.zip
 
 transform:
 	sed -i "" "s/--silent\"/--silent --gulpfile node_modules\/@yama-dev\/dev-template-gulp-core\/gulpfile\.esm\.js --cwd \.\/\"/g" "template/package.json"
