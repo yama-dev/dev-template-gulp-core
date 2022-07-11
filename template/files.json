@@ -14,5 +14,60 @@
       "description": "basic use.",
       "target": "basic"
     }
+  ],
+  "library": [
+    {
+      "name": "jQuery@3",
+      "files": [
+        {
+          "src": "./library/jquery-3.6.0.min.js",
+          "dist": "./src/assets/js/vender/jquery-3.6.0.min.js"
+        },
+        {
+          "src": "./library/jquery.easing.1.4.min.js",
+          "dist": "./src/assets/js/vender/jquery.easing.1.4.min.js"
+        }
+      ],
+      "add": [
+        {
+          "target": "./src/index.html(.ejs)?",
+          "text": "<script src=\"./assets/js/vender/jquery-3.6.0.min.js\"></script>"
+        },
+        {
+          "target": "./src/index.html(.ejs)?",
+          "text": "<script src=\"./assets/js/vender/jquery.easing.1.4.min.js\"></script>"
+        }
+      ]
+    },
+    {
+      "name": "Swiper@4",
+      "files": [
+        {
+          "src": "./library/swiper-4.5.3.min.js",
+          "dist": "./src/assets/js/vender/swiper-4.5.3.min.js"
+        }
+      ],
+      "add": [
+        {
+          "target": "./src/index.html(.ejs)?",
+          "text": "<script src=\"./assets/js/vender/swiper-4.5.3.min.js\"></script>"
+        }
+      ]
+    },
+    {
+      "name": "Vuejs@2",
+      "files": [
+        {
+          "src": "./library/vue-2.6.12.js",
+          "dist": "./src/assets/js/vender/vue-2.6.12.js"
+        }
+      ],
+      "add": [
+        {
+          "target": "./src/index.html(.ejs)?",
+          "text": "<script src=\"./assets/js/vender/vue-2.6.12.js\"></script>"
+        }
+      ]
+    }
   ]
 }
