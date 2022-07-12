@@ -70,15 +70,39 @@
       "name": "Vuejs@2",
       "files": [
         {
-          "src": "library/vue-2.6.12.js",
-          "dist": "src/assets/js/vender/vue-2.6.12.js"
+          "src": "library/vue.2.7.4.global.prod.js",
+          "dist": "src/assets/js/vender/vue.2.7.4.global.prod.js"
+        },
+        {
+          "src": "library/vue.2.7.4.global.dev.js",
+          "dist": "src/assets/js/vender/vue.2.7.4.global.dev.js"
         }
       ],
       "add": [
         {
           "target": "src/index.html(.ejs)?",
           "type": "js",
-          "text": "<script src=\"./assets/js/vender/vue-2.6.12.js\"></script>"
+          "text": "<script src=\"./assets/js/vender/vue.2.7.4.global.dev.js\"></script>"
+        }
+      ]
+    },
+    {
+      "name": "Vuejs@3",
+      "files": [
+        {
+          "src": "library/vue.3.2.36.global.prod.js",
+          "dist": "src/assets/js/vender/vue.3.2.36.global.prod.js"
+        },
+        {
+          "src": "library/vue.3.2.36.global.dev.js",
+          "dist": "src/assets/js/vender/vue.3.2.36.global.dev.js"
+        }
+      ],
+      "add": [
+        {
+          "target": "src/index.html(.ejs)?",
+          "type": "js",
+          "text": "<script src=\"./assets/js/vender/vue.3.2.36.global.prod.js\"></script>"
         }
       ]
     }
