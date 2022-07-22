@@ -97,12 +97,12 @@
         {
           "target": "src/index.html(.ejs)?",
           "type": "js",
-          "text": "<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js\"></script>\n<script>window.jQuery.easing.def || document.write('<script src=\"./assets/js/vender/jquery.easing.1.4.min.js\"><\/script>')</script>"
+          "text": "<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js\"></script>\n<script>window.jQuery.easing.def || document.write('<script src=\"./assets/js/vender/jquery.easing.1.4.min.js\"><\\/script>')</script>"
         },
         {
           "target": "src/index.html(.ejs)?",
           "type": "js",
-          "text": "<script src=\"//code.jquery.com/jquery-3.6.0.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"./assets/js/vender/jquery-3.6.0.min.js\"><\/script>')</script>"
+          "text": "<script src=\"//code.jquery.com/jquery-3.6.0.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"./assets/js/vender/jquery-3.6.0.min.js\"><\\/script>')</script>"
         }
       ]
     }
