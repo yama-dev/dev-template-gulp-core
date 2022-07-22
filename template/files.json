@@ -17,56 +17,6 @@
   ],
   "library": [
     {
-      "name": "jQuery@3",
-      "files": [
-        {
-          "src": "library/jquery-3.6.0.min.js",
-          "dist": "src/assets/js/vender/jquery-3.6.0.min.js"
-        },
-        {
-          "src": "library/jquery.easing.1.4.min.js",
-          "dist": "src/assets/js/vender/jquery.easing.1.4.min.js"
-        }
-      ],
-      "add": [
-        {
-          "target": "src/index.html(.ejs)?",
-          "type": "js",
-          "text": "<script src=\"./assets/js/vender/jquery.easing.1.4.min.js\"></script>"
-        },
-        {
-          "target": "src/index.html(.ejs)?",
-          "type": "js",
-          "text": "<script src=\"./assets/js/vender/jquery-3.6.0.min.js\"></script>"
-        }
-      ]
-    },
-    {
-      "name": "Swiper@4",
-      "files": [
-        {
-          "src": "library/swiper-4.5.3.min.js",
-          "dist": "src/assets/js/vender/swiper-4.5.3.min.js"
-        },
-        {
-          "src": "library/swiper.min.css",
-          "dist": "src/assets/css/swiper.min.css"
-        }
-      ],
-      "add": [
-        {
-          "target": "src/index.html(.ejs)?",
-          "type": "js",
-          "text": "<script src=\"./assets/js/vender/swiper-4.5.3.min.js\"></script>"
-        },
-        {
-          "target": "src/index.html(.ejs)?",
-          "type": "css",
-          "text": "<link rel=\"stylesheet\" href=\"./assets/css/swiper.min.css\">"
-        }
-      ]
-    },
-    {
       "name": "Vuejs@2",
       "files": [
         {
@@ -103,6 +53,56 @@
           "target": "src/index.html(.ejs)?",
           "type": "js",
           "text": "<script src=\"./assets/js/vender/vue.3.2.36.global.prod.js\"></script>"
+        }
+      ]
+    },
+    {
+      "name": "Swiper@4",
+      "files": [
+        {
+          "src": "library/swiper-4.5.3.min.js",
+          "dist": "src/assets/js/vender/swiper-4.5.3.min.js"
+        },
+        {
+          "src": "library/swiper.min.css",
+          "dist": "src/assets/css/swiper.min.css"
+        }
+      ],
+      "add": [
+        {
+          "target": "src/index.html(.ejs)?",
+          "type": "js",
+          "text": "<script src=\"./assets/js/vender/swiper-4.5.3.min.js\"></script>"
+        },
+        {
+          "target": "src/index.html(.ejs)?",
+          "type": "css",
+          "text": "<link rel=\"stylesheet\" href=\"./assets/css/swiper.min.css\">"
+        }
+      ]
+    },
+    {
+      "name": "jQuery@3",
+      "files": [
+        {
+          "src": "library/jquery-3.6.0.min.js",
+          "dist": "src/assets/js/vender/jquery-3.6.0.min.js"
+        },
+        {
+          "src": "library/jquery.easing.1.4.min.js",
+          "dist": "src/assets/js/vender/jquery.easing.1.4.min.js"
+        }
+      ],
+      "add": [
+        {
+          "target": "src/index.html(.ejs)?",
+          "type": "js",
+          "text": "<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js\"></script>\n<script>window.jQuery.easing.def || document.write('<script src=\"./assets/js/vender/jquery.easing.1.4.min.js\"><\/script>')</script>"
+        },
+        {
+          "target": "src/index.html(.ejs)?",
+          "type": "js",
+          "text": "<script src=\"//code.jquery.com/jquery-3.6.0.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"./assets/js/vender/jquery-3.6.0.min.js\"><\/script>')</script>"
         }
       ]
     }
