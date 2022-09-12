@@ -25,6 +25,7 @@ let CONFIG = {
   },
 
   watchDirectory: {
+    htmlpre : `${CONFIG_PATH.source}**/*.html`,
     html    : `${CONFIG_PATH.sourceBuild}**/*.html`,
     ejs     : `${CONFIG_PATH.source}**/*.ejs`,
     pug     : `${CONFIG_PATH.source}**/*.pug`,
@@ -177,7 +178,7 @@ if(CONFIG.user.twig || CONFIG.env.twig){
   CONFIG.env.htmlLint = false;
   CONFIG.env.jsLint = false;
   if(CONFIG.path.source !== CONFIG.path.sourceBuild){
-    CONFIG.deployDirectory.push(`${CONFIG_PATH.source}**/_twig/**`);
+    CONFIG.copyDirectory.push(`${CONFIG_PATH.source}**/_twig/**`);
   }
 }
 
