@@ -23,7 +23,6 @@ import taskClean from './.dev/clean/index.js';
 import taskPhp from './.dev/php/index.js';
 import taskTwig from './.dev/twig/index.js';
 import tackDeploy from './.dev/deploy/index.js';
-import tackImageMin from './.dev/image/index.js';
 export default series(
   taskClean,
   taskTemplate,
@@ -57,8 +56,4 @@ export const deploy = series(
   taskJsBabel,
   taskJsWebpack,
   tackDeploy
-);
-export const imagemin = series(
-  taskClean,
-  tackImageMin
 );
