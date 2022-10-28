@@ -1,6 +1,6 @@
 {
   "name": "dev-template-gulp",
-  "version": "1.13.7",
+  "version": "1.13.8",
   "description": "Development environment for web site development",
   "keywords": [
     "web",
@@ -29,7 +29,7 @@
     "postinstall": "npm config delete loglevel"
   },
   "engines": {
-    "node": ">=14.0.0 <=16.17.0"
+    "node": ">=14.0.0 <=18.12.0"
   },
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     "@babel/register": "^7.14.5",
     "@yama-dev/data-collector": "^0.6.0",
     "@yama-dev/data-template": "^0.6.0",
-    "@yama-dev/dev-template-gulp-core": "yama-dev/dev-template-gulp-core.git#v1.13.7",
+    "@yama-dev/dev-template-gulp-core": "yama-dev/dev-template-gulp-core.git#v1.13.8",
     "@yama-dev/gulp-stream-util": "^0.3.0",
     "autoprefixer": "^10.3.1",
     "babel-loader": "^8.2.2",
@@ -136,6 +136,6 @@
     }
   },
   "volta": {
-    "node": "16.16.0"
+    "node": "18.12.0"
   }
 }
