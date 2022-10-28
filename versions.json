@@ -1,5 +1,17 @@
 [
   {
+    "version": "1.13.8",
+    "description": "adjust dev-template.",
+    "name": "@yama-dev/dev-template-gulp-core",
+    "repo": "https://github.com/yama-dev/dev-template-gulp-core",
+    "tag": "v1.13.8",
+    "repo_template": {
+      "directory": "template",
+      "zip": "master.zip",
+      "files": "files.json"
+    }
+  },
+  {
     "version": "1.13.7",
     "description": "adjust dev-template.",
     "name": "@yama-dev/dev-template-gulp-core",
