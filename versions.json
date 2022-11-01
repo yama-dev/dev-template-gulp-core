@@ -1,7 +1,19 @@
 [
   {
+    "version": "1.13.9",
+    "description": "bugfix, node version 18.12.0",
+    "name": "@yama-dev/dev-template-gulp-core",
+    "repo": "https://github.com/yama-dev/dev-template-gulp-core",
+    "tag": "v1.13.9",
+    "repo_template": {
+      "directory": "template",
+      "zip": "master.zip",
+      "files": "files.json"
+    }
+  },
+  {
     "version": "1.13.8",
-    "description": "adjust dev-template.",
+    "description": "node version 18.12.0",
     "name": "@yama-dev/dev-template-gulp-core",
     "repo": "https://github.com/yama-dev/dev-template-gulp-core",
     "tag": "v1.13.8",
