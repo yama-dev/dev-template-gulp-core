@@ -43,6 +43,18 @@ transform:
 delds:
 	find . -name ".DS_Store" -print -exec rm {} ";"
 
+rsync_test:
+	@rsync -arhv --checksum --delete --dry-run ../dev-template-gulp/.dev/ ./.dev/
+	@rsync -arhv --checksum --delete --dry-run ../dev-template-gulp/package.json ./template/package.json
+	@echo '---'
+	@echo 'make (dry-run) -> make sync (!important)'
+	@echo '---'
+
+rsync:
+	@rsync -arhv --checksum --delete ../dev-template-gulp/.dev/ ./.dev/
+	@rsync -arhv --checksum --delete ../dev-template-gulp/package.json ./template/package.json
+	@echo '---'
+
 backup:
 	# $(RM) $(ZIP_FOLDER)
 	# $(MK) $(ZIP_FOLDER)
