@@ -1,10 +1,10 @@
 [
   {
-    "version": "1.14.1",
+    "version": "1.14.2",
     "description": "設定ファイルの場所やファイル名を調整可能に。開発サーバーのレスポンスを調整。",
     "name": "@yama-dev/dev-template-gulp-core",
     "repo": "https://github.com/yama-dev/dev-template-gulp-core",
-    "tag": "v1.14.1",
+    "tag": "v1.14.2",
     "repo_template": {
       "directory": "template",
       "zip": "master.zip",
