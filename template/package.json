@@ -1,6 +1,6 @@
 {
   "name": "dev-template-gulp",
-  "version": "1.14.2",
+  "version": "1.14.3",
   "description": "Development environment for web site development",
   "keywords": [
     "web",
@@ -54,7 +54,7 @@
     "@babel/register": "^7.21.0",
     "@yama-dev/data-collector": "^0.6.0",
     "@yama-dev/data-template": "^0.6.0",
-    "@yama-dev/dev-template-gulp-core": "yama-dev/dev-template-gulp-core.git#v1.14.2",
+    "@yama-dev/dev-template-gulp-core": "yama-dev/dev-template-gulp-core.git#v1.14.3",
     "@yama-dev/gulp-stream-util": "^0.3.0",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^8.2.2",
@@ -76,7 +76,6 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
     "gulp-ignore": "^3.0.0",
-    "gulp-javascript-obfuscator": "^1.1.6",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "~9.0.1",
     "gulp-prettier": "~4.0.0",
