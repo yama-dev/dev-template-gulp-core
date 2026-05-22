@@ -1,10 +1,10 @@
 [
   {
-    "version": "1.14.3",
+    "version": "1.15.0",
     "description": "dev-templateが立ち上がらなくなるバグを修正。",
     "name": "@yama-dev/dev-template-gulp-core",
     "repo": "https://github.com/yama-dev/dev-template-gulp-core",
-    "tag": "v1.14.3",
+    "tag": "v1.15.0",
     "repo_template": {
       "directory": "template",
       "zip": "master.zip",
