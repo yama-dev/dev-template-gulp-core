@@ -3,7 +3,8 @@
  */
 // import path from 'path';
 import CONFIG        from '../config/index.js';
-import { src, dest } from 'gulp';
+import gulp from 'gulp';
+const { src, dest } = gulp;
 import imagemin      from 'gulp-imagemin';
 import ignore        from 'gulp-ignore';
 import prompt        from 'gulp-prompt';

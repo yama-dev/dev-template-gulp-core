@@ -2,7 +2,8 @@
  * IMPORT MODULES
  */
 import CONFIG from '../config/index.js';
-import { src, dest } from 'gulp';
+import gulp from 'gulp';
+const { src, dest } = gulp;
 import uglify from 'gulp-uglify';
 
 /**

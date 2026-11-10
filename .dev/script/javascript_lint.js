@@ -3,7 +3,8 @@
  */
 import CONFIG   from '../config/index.js';
 import notifier from 'node-notifier';
-import { src }  from 'gulp';
+import gulp from 'gulp';
+const { src } = gulp;
 import eslint   from 'gulp-eslint';
 import plumber  from 'gulp-plumber';
 

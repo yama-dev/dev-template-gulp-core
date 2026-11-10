@@ -2,10 +2,13 @@
  * IMPORT MODULES
  */
 import CONFIG from '../config/index.js';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 import notifier from 'node-notifier';
 import fs from 'fs';
 import path from 'path';
-import { src, dest } from 'gulp';
+import gulp from 'gulp';
+const { src, dest } = gulp;
 import plumber from 'gulp-plumber';
 
 /**

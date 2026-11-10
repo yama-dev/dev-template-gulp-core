@@ -5,12 +5,13 @@
  * Licensed under the MIT license.
  */
 
-import pkg from './package.json';
+import pkg from './package.json' with { type: 'json' };
 let _copy = `${pkg.name.toUpperCase()}
 - Version ${pkg.version}
 - Copyright ${pkg.author}`;
 console.log('-'.repeat(38) + '\n'+ _copy + '\n'+'-'.repeat(38));
-import { series, parallel } from 'gulp';
+import gulp from 'gulp';
+const { series, parallel } = gulp;
 import taskSass from './.dev/sass/index.js';
 import taskJsBabel from './.dev/javascript_babel/index.js';
 import taskWebpack from './.dev/webpack/index.js';

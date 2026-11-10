@@ -1,6 +1,7 @@
 {
   "corefile": [
     "package.json",
+    "package-lock.json",
     ".gitignore"
   ],
   "basefile": [

@@ -4,7 +4,8 @@
 import CONFIG from '../config/index.js';
 import notifier       from 'node-notifier';
 
-import { src, dest } from 'gulp';
+import gulp from 'gulp';
+const { src, dest } = gulp;
 
 import gulpSass from 'gulp-sass';
 // import nodeSass from 'node-sass';

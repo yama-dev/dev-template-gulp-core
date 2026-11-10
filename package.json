@@ -1,9 +1,12 @@
 {
   "name": "@yama-dev/dev-template-gulp-core",
-  "version": "1.15.0",
+  "version": "1.16.0",
   "description": "",
   "author": "yama-dev",
   "license": "MIT",
-  "main": "gulpfile.esm.js",
-  "scripts": {}
+  "main": "gulpfile.mjs",
+  "scripts": {},
+  "engines": {
+    "node": ">=24.22.1 <25"
+  }
 }

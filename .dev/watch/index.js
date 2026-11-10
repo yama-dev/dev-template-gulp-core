@@ -3,9 +3,12 @@
  */
 import path from 'path';
 import CONFIG from '../config/index.js';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 import notifier from 'node-notifier';
 import glob from 'glob';
-import { watch } from 'gulp';
+import gulp from 'gulp';
+const { watch } = gulp;
 import { taskTemplateEjs } from '../template/index.js';
 import taskSass from '../sass/index.js';
 import taskJsBabel from '../javascript_babel/index.js';

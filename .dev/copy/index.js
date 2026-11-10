@@ -3,10 +3,10 @@
  */
 import path from 'path';
 import CONFIG from '../config/index.js';
-import {
-  src,
-  dest,
-} from 'gulp';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+import gulp from 'gulp';
+const { src, dest } = gulp;
 import ignore from 'gulp-ignore';
 import changed from 'gulp-changed';
 

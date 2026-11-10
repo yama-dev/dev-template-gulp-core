@@ -27,18 +27,14 @@ all:
 build: clean delds transform zip
 
 zip:
-	$(CD) $(TEMPLATE_FOLDER) && $(ZIP) master.zip -r .
+	$(CD) $(TEMPLATE_FOLDER) && $(ZIP) master.zip -r . -x master.zip
 
 clean:
 	@echo clean
 	$(RM) template/master.zip
 
 transform:
-	sed -i "" "s/ --develop\"/ --develop --gulpfile node_modules\/@yama-dev\/dev-template-gulp-core\/gulpfile\.esm\.js --cwd \.\/\"/g" "template/package.json"
-	sed -i "" "s/ --production\"/ --production --gulpfile node_modules\/@yama-dev\/dev-template-gulp-core\/gulpfile\.esm\.js --cwd \.\/\"/g" "template/package.json"
-	sed -i "" -r "s/version\":[ ]?\"[.0-9]*/version\"\: \"${VERSION}/g" "template/package.json"
-	sed -i "" -r "s/version\":[ ]?\"[.0-9]*/version\"\: \"${VERSION}/g" "package.json"
-	sed -i "" -r "s/yama-dev\/dev-template-gulp-core\.git#v[.0-9]*\"/yama-dev\/dev-template-gulp-core\.git#v${VERSION}\"/g" "template/package.json"
+	node scripts/prepare-template.cjs "$(VERSION)"
 
 delds:
 	find . -name ".DS_Store" -print -exec rm {} ";"

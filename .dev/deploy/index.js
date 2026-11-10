@@ -2,8 +2,11 @@
  * IMPORT MODULES
  */
 import path from 'path';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 import CONFIG        from '../config/index.js';
-import { src, dest } from 'gulp';
+import gulp from 'gulp';
+const { src, dest } = gulp;
 import ignore        from 'gulp-ignore';
 import prompt        from 'gulp-prompt';
 

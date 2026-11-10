@@ -3,7 +3,10 @@
  */
 import path from 'path';
 import CONFIG from '../config/index.js';
-import { src, watch } from 'gulp';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+import gulp from 'gulp';
+const { src, watch } = gulp;
 import taskCopy from '../copy/index.js';
 import {
   taskHtmlLint,

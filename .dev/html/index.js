@@ -2,7 +2,8 @@
  * IMPORT MODULES
  */
 import CONFIG from '../config/index.js';
-import { src, dest, lastRun } from 'gulp';
+import gulp from 'gulp';
+const { src, dest, lastRun } = gulp;
 import notifier from 'node-notifier';
 import plumber from 'gulp-plumber';
 import htmlmin from 'gulp-htmlmin';
