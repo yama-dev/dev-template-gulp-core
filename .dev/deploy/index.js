@@ -36,7 +36,7 @@ let taskDeploy = ()=>{
     }, function(res){
       if(res.dir) _output_dir = res.dir;
       if(!res.dir) return false;
-      return src(_target)
+      return src(_target, { encoding: false })
         .pipe(ignore.include({isFile: true}))
         .pipe(dest(_output_dir));
     }));

@@ -30,7 +30,7 @@ let taskCopy = ()=>{
     }
   }
 
-  return src(_target)
+  return src(_target, { encoding: false })
     .pipe(changed(CONFIG.outputDirectory.dev))
     .pipe(ignore.include({isFile: true}))
     .pipe(dest(CONFIG.outputDirectory.dev));

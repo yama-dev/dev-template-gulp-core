@@ -2,6 +2,12 @@
 
 Webサイト制作用のGulpタスクと配布テンプレートです。
 
+## 1.16.1
+
+- コピーとデプロイ時の文字コード変換を無効にし、バイナリファイルの破損を防ぎます。
+- Sassのimportを調整し、非推奨警告を解消します。
+- 破損済みの出力は再生成してください。入力元も破損している場合は復元が必要です。
+
 ## 1.16.0
 
 - Node.js 24.22.1以上の24系を対象にします。テンプレートのVolta指定は24.22.2です。
@@ -13,12 +19,12 @@ Webサイト制作用のGulpタスクと配布テンプレートです。
 ## 利用先の更新
 
 1. Node.jsを対応する24系へ更新します。
-2. core参照を`yama-dev/dev-template-gulp-core.git#v1.16.0`へ変更します。
+2. core参照を`yama-dev/dev-template-gulp-core.git#v1.16.1`へ変更します。
 3. 各npm scriptの`--gulpfile`を`node_modules/@yama-dev/dev-template-gulp-core/gulpfile.mjs`へ変更します。
 4. `esm`を依存宣言から削除し、`npm install`で利用先のlockfileを更新します。
 5. ビルド、開発サーバー、watchを確認します。
 
-新規作成時は、配布テンプレートの`package.json`と`package-lock.json`を両方コピーし、タグ公開後に`npm ci`でインストールします。
+新規作成時は、配布テンプレートの`package.json`と`package-lock.json`を両方コピーし、ブランチ公開後に`npm ci`でインストールします。
 既存プロジェクトでは独自の依存を維持し、同梱lockfileで上書きせず、更新結果を確認してください。
 本対応は脆弱性の全解消を保証するものではありません。
 利用先の依存構成で`npm audit`を確認してください。
