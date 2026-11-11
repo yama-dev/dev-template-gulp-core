@@ -1,5 +1,17 @@
 [
   {
+    "version": "1.16.1",
+    "description": "コピーとデプロイ時のバイナリファイル破損を修正。Sassの非推奨警告を解消。",
+    "name": "@yama-dev/dev-template-gulp-core",
+    "repo": "https://github.com/yama-dev/dev-template-gulp-core",
+    "tag": "v1.16.1",
+    "repo_template": {
+      "directory": "template",
+      "zip": "master.zip",
+      "files": "files.json"
+    }
+  },
+  {
     "version": "1.16.0",
     "description": "Node.js 24.22.1以上の24系に対応。標準ESMへの移行と依存のセキュリティ更新。",
     "name": "@yama-dev/dev-template-gulp-core",
